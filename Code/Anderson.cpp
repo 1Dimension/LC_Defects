@@ -9,8 +9,8 @@
 Anderson::Anderson(void)
 {
 	k = 0;
-	m_max = 3; // Ä¬ÈÏ
-	N = 10; // Ä¬ÈÏ 
+	m_max = 3; // é»˜è®¤
+	N = 10; // é»˜è®¤ 
 	initialized = false;
 	printf("\n[Anderson] a empty Anderson is created.\n");
 
@@ -116,8 +116,8 @@ void Anderson::Finalize()
 
 void Anderson::AddHistory()
 {
-	// AndersonMixing µÄstep 1: k,m, update x,g,f history
-	// ÕâÀïÖ»Ìí¼Óhistory£¬²¢²»×öµü´ú
+	// AndersonMixing çš„step 1: k,m, update x,g,f history
+	// è¿™é‡Œåªæ·»åŠ historyï¼Œå¹¶ä¸åšè¿­ä»£
 	k++; // start of k is zero
 	m = k<m_max ? k : m_max;  // m = min( k, m_max)
 	int id_newadd = (k-1)%m_max;
@@ -129,8 +129,8 @@ void Anderson::AddHistory()
 }
 void Anderson::AndersonMixing(double updateRatio)
 {
-	// Ê¹ÓÃÊ±£¬ĞÂµÄÊı¾İcopyµ½g_newaddÖĞ
-	// Ê¹ÓÃSolve()Ö®ºó´Óx_newÖĞcopyµü´ú½á¹û
+	// ä½¿ç”¨æ—¶ï¼Œæ–°çš„æ•°æ®copyåˆ°g_newaddä¸­
+	// ä½¿ç”¨Solve()ä¹‹åä»x_newä¸­copyè¿­ä»£ç»“æœ
 
 	/*// step 1: k,m, update x,g,f history
 	k++; // start of k is zero
@@ -143,7 +143,7 @@ void Anderson::AndersonMixing(double updateRatio)
 	}//*/
 
 	if( k < 2 )
-		goto update; // ¿ªÊ¼Ê±Ã»ÓĞ·½³ÌÒª½â
+		goto update; // å¼€å§‹æ—¶æ²¡æœ‰æ–¹ç¨‹è¦è§£
 
 	// step 2: update innarMatrix, (m-1)-by-(m-1)
 	for(int i=0; i<m-1; i++){
