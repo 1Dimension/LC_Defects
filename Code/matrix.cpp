@@ -317,7 +317,7 @@ void SpinMatrixCreate(double T[][3], double theta,double gamma,double beta)
 
 } // spin mattrix T
 
-/*void GradInFourierSpace(fftw_complex *grad_f[], fftw_complex *f, int *N, double *T, int dim) // �ݶ�
+/*void GradInFourierSpace(fftw_complex *grad_f[], fftw_complex *f, int *N, double *T, int dim) // ÌÝ¶È
 {
 	int ND = prod(N,dim);
 	int *index = (int*)malloc(sizeof(int)*dim);
@@ -363,7 +363,7 @@ void Fourier2Real(fftw_complex *complex, double *real, int *N, int dim)
 
 	int ND = prod(N,dim);
 	for(int i=0; i<ND; i++)
-		;//real[i] /= N;  // c2r ��Ҫ��
+		;//real[i] /= N;  // c2r ²»Òª³ý
 //	cout<<"out Fourier2Real"<<endl;
 }
 void Real2Fourier(double *real, fftw_complex *complex, int *N, int *n, int dim) 
@@ -374,7 +374,7 @@ void Real2Fourier(double *real, fftw_complex *complex, int *N, int *n, int dim)
 
 	int ND = prod(N,dim);
 	for(int i=0; i<ND; i++){
-		complex[i][0] /= ND;	// r2c Ҫ��N
+		complex[i][0] /= ND;	// r2c Òª³ýN
 		complex[i][1] /= ND;
 	}
 
