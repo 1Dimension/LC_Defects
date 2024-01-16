@@ -1,5 +1,7 @@
 # LC_Defects
 
+[The code is still under construction]
+
 This C++ code is designed to simulate defect structures in liquid crystals under confinement, based on the Landau-de Gennes free energy framework, using a 'discrete-then-minimize' strategy.
 
 Primarily, the code is for the simulations in the following study:
