@@ -1,6 +1,5 @@
 # LC_Defects
 
-[The code is still under construction]
 
 Please email yiweiw@ucr.edu if you have any questions.
 
